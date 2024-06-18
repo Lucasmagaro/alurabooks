@@ -1,10 +1,10 @@
-@import url("/styles/header.css");
-@import url("/styles/main.css");
-@import url("/styles/carrosel.css");
-@import url("/styles/container.css");
-@import url("/styles/topicos.css");
-@import url("/styles/rodape.css");
-@import url("/styles/rodape_final.css");
+@import url("./styles/header.css");
+@import url("./styles/main.css");
+@import url("./styles/carrosel.css");
+@import url("./styles/container.css");
+@import url("./styles/topicos.css");
+@import url("./styles/rodape.css");
+@import url("./styles/rodape_final.css");
 
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap");
 

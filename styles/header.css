@@ -1,0 +1,162 @@
+.cabecalho_menu_hamburguer {
+  background-image: url(/issets/Menu.svg);
+  display: inline-block;
+  width: 36px;
+  height: 24px;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: 0 0 0 0.5em;
+}
+.cabecalho {
+  background-color: var(--cor-de-branco);
+  display: flex;
+  justify-content: space-around;
+  position: relative;
+  align-items: center;
+  gap: 130px;
+}
+.container {
+  display: flex;
+  align-items: center;
+}
+.container__icones {
+  display: flex;
+  align-items: center;
+}
+.container_filho {
+  padding: 1em;
+}
+
+.lista_menu {
+  display: none;
+  position: absolute;
+  top: 100%;
+  width: 260px;
+}
+/*se o "conteinaer_botao" tiver ":checked" procure outro que venha depois dele tenha classe menu.*/
+.container_botao:checked ~ .lista_menu {
+  display: block;
+  list-style: none;
+  z-index: 50;
+}
+
+.lista__menu_item {
+  background: linear-gradient(97.54deg, #002f52 35.49%, #326589 165.37%);
+
+  background-clip: text;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: var(--cor-black);
+  font-weight: 400;
+}
+
+.lista_menu_cabecalho_item,
+.lista_menu_cabecalho_titulo {
+  padding: 1em;
+  background-color: var(--cor-de-branco);
+}
+.lista_menu_cabecalho_titulo {
+  color: var(--cor-laranja);
+  font-weight: 700;
+}
+.container_botao {
+  display: none;
+}
+.menu_desktop {
+  display: none;
+}
+.titulo_alura {
+  display: none;
+}
+.icones_span {
+  display: none;
+}
+@media screen and (min-width: 1024px) {
+  .cabecalho_menu_hamburguer {
+    display: none;
+  }
+  .titulo_alura {
+    display: flex;
+    font-weight: 400;
+  }
+  header.cabecalho {
+    display: flex;
+    justify-content: space-between;
+    padding: 0.7em;
+  }
+
+  .menu_desktop {
+    display: flex;
+    list-style: none;
+    justify-content: space-between;
+    gap: 20px;
+  }
+
+  .menu_desktop a {
+    text-decoration: none;
+    color: var(--cor-black);
+  }
+  li.opcao {
+    color: var(--cor-black);
+    font-weight: 400;
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 0.5em;
+  }
+  .opcao9 {
+    padding: 0.5em;
+    font-weight: 400;
+  }
+
+  .container_filho {
+    position: relative;
+  }
+  img.container_filho {
+    bottom: 2px;
+  }
+  .titulo_alura {
+    margin-left: 70px;
+    position: absolute;
+    bottom: 28px;
+  }
+
+  .topicos:checked ~ .lista_menu {
+    display: block;
+    list-style: none;
+  }
+  .topicos {
+    display: none;
+  }
+  a.lista__menu_item {
+    color: var(--cor-azul);
+  }
+
+  li.lista_menu_cabecalho_item:hover {
+    background-color: var(--cor-azul);
+    color: var(--cor-de-branco);
+  }
+  a.lista__menu_item:hover {
+    color: var(--cor-de-branco);
+  }
+  li.opcao9:hover {
+    background-color: var(--cor-azul);
+    color: var(--cor-de-branco);
+  }
+}
+
+@media screen and (min-width: 1720px) {
+  .icones_span {
+    display: inline-block;
+    top: 0px;
+  }
+  header.cabecalho {
+    display: flex;
+    justify-content: space-around;
+    gap: 1300px;
+    position: relative;
+  }
+  .menu_desktop {
+    position: absolute;
+    left: 380px;
+  }
+}

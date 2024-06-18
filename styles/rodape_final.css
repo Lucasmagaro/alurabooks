@@ -1,0 +1,15 @@
+.rodape_final {
+  padding: 1.5em;
+  border-top: 1px solid #858585;
+  font-weight: 400;
+  text-align: start;
+}
+@media screen and (min-width: 1024px) {
+  .rodape_final {
+    padding: 1.5em;
+    border-top: 1px solid #858585;
+    font-weight: 400;
+    text-align: start;
+    font-size: 2rem;
+  }
+}

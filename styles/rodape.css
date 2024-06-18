@@ -1,0 +1,54 @@
+.cadastro_email {
+  width: 90%;
+  border: 1px solid var(--cor-azul);
+  border-radius: 24px;
+  padding: 1em;
+  background-color: transparent;
+  text-align: start;
+}
+.cadastro_email::placeholder {
+  background-image: url(/issets/Email.svg);
+  background-repeat: no-repeat;
+  background-position: 3%;
+  color: var(--cor-azul);
+  font-weight: 400;
+  padding-left: 12%;
+}
+.rodape {
+  color: var(--cor-azul);
+  margin: 1em;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  box-sizing: border-box;
+}
+.rodape span,
+h3 {
+  width: 100%;
+}
+.rodape h3 {
+  font-weight: 500;
+}
+.rodape {
+  font-weight: 300;
+}
+@media screen and (min-width: 1024px) {
+  .rodape {
+    color: var(--cor-azul);
+    margin: 4em;
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    box-sizing: border-box;
+  }
+  h3 {
+    position: absolute;
+    box-sizing: border-box;
+    width: 50%;
+  }
+
+  span {
+    position: relative;
+    top: 40px;
+  }
+}
